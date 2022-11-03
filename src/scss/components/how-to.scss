@@ -1,0 +1,117 @@
+.how-to {
+  margin-top: 150px;
+  @include for-tablet {
+    margin-top: 100px;
+  }
+  @include for-phone {
+    margin-top: 85px;
+  }
+
+  &__title {
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 120%;
+    text-align: center;
+    color: $dark;
+    margin-bottom: 50px;
+    @include for-phone {
+      font-style: 24px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 10px;
+    @include for-tablet {
+      flex-direction: column;
+      row-gap: 30px;
+    }
+  }
+  &__list {
+    display: flex;
+    column-gap: 37px;
+    @include for-tablet {
+      flex-direction: column;
+      row-gap: 30px;
+    }
+  }
+  &__item {
+    width: 370px;
+    padding: 62px 0 27px 57px;
+    position: relative;
+    &:first-child {
+      max-width: 345px;
+    }
+    .decor {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      translate: 0 -50%;
+      font-weight: 800;
+      font-size: 129px;
+      line-height: 120%;
+      color: $light;
+      user-select: none;
+    }
+    .text {
+      position: relative;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 120%;
+      color: $dark;
+      z-index: 2;
+      span {
+        font-weight: 700;
+      }
+    }
+    @include for-laptop {
+      width: 250px;
+      &:first-child {
+        max-width: none;
+      }
+    }
+    @include for-tablet {
+      width: 100%;
+    }
+    @include for-phone {
+      padding: 35px 0 0 37px;
+      .decor {
+        font-size: 100px;
+      }
+      .text {
+        font-size: 16px;
+      }
+    }
+  }
+
+  &__link {
+    width: 150px;
+    height: fit-content;
+    flex-shrink: 0;
+    display: flex;
+    column-gap: 10px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 120%;
+    color: #cecece;
+    text-decoration: underline;
+    transition: 0.2s;
+    &:hover {
+      filter: brightness(50%);
+    }
+    img {
+      height: 38px;
+    }
+
+    @include for-tablet {
+      width: fit-content;
+      align-items: center;
+    }
+    @include for-phone {
+      font-size: 16px;
+    }
+  }
+}

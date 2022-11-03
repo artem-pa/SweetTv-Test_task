@@ -4,14 +4,40 @@
 @import "./common/mixins";
 @import "./components/components";
 
-html, body {
-  width: 100%;
-  font-family: 'Avenir Next Cyr';
+html {
+  font-family: "Avenir Next Cyr";
   font-size: 24px;
-  background-color: #F5F5F5;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #ffffff;
+  scroll-behavior: smooth;
   overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #20bcc6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #20bcc6;
+}
+
+::-webkit-scrollbar-track {
+  background: #0f1c26;
+}
+* {
+  scrollbar-width: auto;
+  scrollbar-color: #20bcc6 #0f1c26;
 }
 
 .container {
   width: 1024px;
+  max-width: calc(100% - 30px);
+  margin: 0 auto;
 }

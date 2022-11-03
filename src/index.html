@@ -1,34 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.min.css">
-  <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-  <title>Sweet TV</title>
-</head>
-<body>
-  <header class="header">
-    <div class="header__bg">
-      <div class="header__title">
-        <p class="text-1"><span>Підключай за</span> 1 грн</p>
-        <img class="logo" src="img/logo.svg" alt="Logo">
-        <p class="text-2">Отримуй</p>
-        <p class="text-3">
-          <span class="red"> iPhone 13 mini </span> щотижня
-        </p>
-        <p class="text-4">
-          <span class="red">Hyundai i10</span> щомісяця
-        </p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <title>Sweet TV</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__bg">
+        <h1 class="header__title">
+          <p class="text-1"><span>Підключай за</span> 1 грн</p>
+          <img class="logo" src="img/logo.svg" alt="Logo" />
+          <p class="text-2">Отримуй</p>
+          <p class="text-3">
+            <span class="red"> iPhone 13 mini </span> щотижня
+          </p>
+          <p class="text-4"><span class="red">Hyundai i10</span> щомісяця</p>
+        </h1>
+        <button class="header__btn">Взяти участь в акції</button>
       </div>
-      <button class="header__btn">Взяти участь в акції</button>
-    </div>
-    <div class="header__car">
-      <img src="img/car_image_01.png" alt="Car image">
-    </div>
-  </header>
+      <div class="header__car">
+        <img src="img/header/car_image.png" alt="Car image" />
+      </div>
+    </header>
 
-  <script src="js/main.min.js"></script>
-</body>
+    <section class="how-to">
+      <div class="container">
+        <h2 class="how-to__title">Як взяти участь в акції?</h2>
+        <div class="how-to__row">
+          <ul class="how-to__list">
+            <li class="how-to__item">
+              <div class="decor">1</div>
+              <p class="text">
+                <span> Підключись до SWEET.TV за 1 гривню </span>
+                або на будь який інший платний тариф
+              </p>
+            </li>
+            <li class="how-to__item">
+              <div class="decor">2</div>
+              <p class="text">
+                <span> Вітаємо! Ти — учасник розіграшів </span>
+                Hyundai i10 щомісяця та iPhone 13 mini щотижня!
+              </p>
+            </li>
+          </ul>
+          <a class="how-to__link" href="#" >
+            <img src="img/how-to/terms_icon.svg" alt="Terms icon" height="100%">
+            Повнi умови розiграшу </a>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/main.min.js"></script>
+  </body>
 </html>
