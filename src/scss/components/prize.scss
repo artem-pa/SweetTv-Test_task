@@ -1,0 +1,180 @@
+.prize {
+  margin-top: 150px;
+  padding-bottom: 86px;
+  position: relative;
+  @include for-tablet {
+    margin-top: 100px;
+    padding-bottom: 60px;
+  }
+  @include for-phone {
+    margin-top: 50px;
+  }
+
+  &__bg {
+    height: 570px;
+    padding-top: 70px;
+    background: url("@img/background.png") 0 0 no-repeat;
+    background-size: cover;
+    position: relative;
+
+    @include for-tablet {
+      padding-top: 40px;
+    }
+  }
+
+  &__title {
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 108.5%;
+    color: #ffffff;
+    text-align: center;
+
+    @include for-tablet {
+      font-size: 40px;
+    }
+    @include for-phone {
+      font-size: 24px;
+    }
+  }
+
+  &__images {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+
+    .image {
+      position: absolute;
+      z-index: 2;
+      &.woman {
+        height: 334px;
+        bottom: 0;
+        right: 371px;
+        z-index: 8;
+  
+        @include for-tablet {
+          height: 226px;
+          rotate: -14deg;
+          bottom: 45px;
+          right: 20px;
+        }
+      }
+      &.man {
+        height: 429px;
+        bottom: 0;
+        right: 183px;
+        z-index: 7;
+  
+        @include for-tablet {
+          height: 231px;
+          rotate: 10deg;
+          bottom: 63px;
+          right: -170px;
+
+        }
+      }
+      &.phones {
+        height: 270px;
+        bottom: -30px;
+        left: -39px;
+        z-index: 9;
+  
+        @include for-tablet {
+          height: 199px;
+          left: -155px;
+        }
+      }
+      &.iphone {
+        height: 57px;
+        rotate: 60deg;
+        bottom: 50px;
+        right: -50px;
+        z-index: 6;
+  
+        @include for-tablet {
+          height: 40px;
+          rotate: -2deg;
+          bottom: 265px;
+          left: -12px;
+        }
+      }
+      &.hyundai {
+        height: 87px;
+        rotate: -20deg;
+        bottom: 155px;
+        left: 135px;
+        z-index: 5;
+  
+        @include for-tablet {
+          height: 66px;
+          rotate: 44.5deg;
+          bottom: 200px;
+          left: -95px;
+        }
+      }
+      &.car {
+        height: 360px;
+        bottom: 0;
+        left: 61px;
+        z-index: 10;
+  
+        @include for-tablet {
+          height: 225px;
+          left: 0;
+          translate: -50% 0
+        }
+      }
+    }
+  }
+}
+
+.timer {
+  width: fit-content;
+  margin: 36px auto 0;
+  position: relative;
+  z-index: 3;
+
+  &__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+
+  &__body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 7px;
+    font-weight: 800;
+    font-size: 25px;
+    line-height: 120%;
+    color: #ffffff;
+    & .square {
+      width: 60px;
+      height: 60px;
+      border-radius: 4px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $red;
+      position: relative;
+      &::after {
+        position: absolute;
+        bottom: -16px;
+        font-weight: 450;
+        font-size: 13.2px;
+        line-height: 120%;
+      }
+      &.days::after {
+        content: "днів";
+      }
+      &.hours::after {
+        content: "годин";
+      }
+      &.minutes::after {
+        content: "хвилин";
+      }
+    }
+  }
+}

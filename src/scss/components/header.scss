@@ -10,9 +10,8 @@
 
   &__bg {
     padding-top: 60px;
-    background: url("@img/background.png") no-repeat;
+    background: url("@img/background.png") 0 0 no-repeat;
     background-size: cover;
-    background-position: start;
     height: 909px;
     @include for-tablet {
       padding-top: 35px;
