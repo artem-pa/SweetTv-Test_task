@@ -1,0 +1,10 @@
+@import "./common/reset";
+@import "./common/fonts";
+@import "./common/variables";
+@import "./components/components";
+
+html, body {
+  font-family: 'Avenir Next Cyr';
+  font-size: 24px;
+  background-color: #F5F5F5;
+}
