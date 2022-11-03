@@ -1,10 +1,17 @@
 @import "./common/reset";
 @import "./common/fonts";
 @import "./common/variables";
+@import "./common/mixins";
 @import "./components/components";
 
 html, body {
+  width: 100%;
   font-family: 'Avenir Next Cyr';
   font-size: 24px;
   background-color: #F5F5F5;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 1024px;
 }

@@ -1,0 +1,160 @@
+.header {
+  position: relative;
+  padding-bottom: 148px;
+  @include for-tablet {
+    padding-bottom: 100px;
+  }
+  @include for-phone {
+    padding-bottom: 64px;
+  }
+
+  &__bg {
+    padding-top: 60px;
+    background: url("@img/background.png") no-repeat;
+    background-size: cover;
+    background-position: start;
+    height: 909px;
+    @include for-tablet {
+      padding-top: 35px;
+      height: 800px;
+    }
+    @include for-phone {
+      padding-top: 24px;
+      height: 540px;
+    }
+  }
+  &__title {
+    width: fit-content;
+    margin: 0 auto;
+    color: #ffffff;
+    text-align: center;
+    .text-1 {
+      font-weight: 700;
+      font-size: 38px;
+      line-height: 150%;
+      rotate: -1.84deg;
+      span {
+        text-transform: uppercase;
+      }
+    }
+    .text-2 {
+      font-weight: 700;
+      font-size: 54px;
+      line-height: 120%;
+      rotate: -1.54deg;
+      text-transform: uppercase;
+      margin: 25px 0;
+      position: relative;
+      left: -20px;
+      &::after {
+        content: url("@img/arrow.svg");
+        position: absolute;
+        width: auto;
+        bottom: 0;
+      }
+    }
+    .text-3 {
+      font-weight: 800;
+      font-size: 43px;
+      line-height: 120%;
+      rotate: -2.28deg;
+      margin-bottom: 15px;
+      .red {
+        padding: 0 10px;
+      }
+    }
+    .text-4 {
+      font-weight: 800;
+      font-size: 43px;
+      line-height: 120%;
+      .red {
+        padding: 0 5px;
+      }
+    }
+    .red {
+      background: #e32819;
+    }
+    .logo {
+      width: 280px;
+      height: 65px;
+      transform: matrix(1, 0, 0.02, 1, 0, 0);
+    }
+    @include for-tablet {
+      .text-1 {
+        font-size: 30px;
+      }
+      .text-2 {
+        font-size: 48px;
+        margin: 15px 0;
+      }
+      .text-3,
+      .text-4 {
+        font-size: 36px;
+      }
+    }
+    @include for-phone {
+      .text-1 {
+        font-size: 18px;
+      }
+      .text-2 {
+        font-size: 30px;
+        left: -10px;
+        margin: 0 0 10px;
+        &::after {
+          scale: 0.7;
+          bottom: -60%;
+        }
+      }
+      .text-3,
+      .text-4 {
+        font-size: 24px;
+        .red {
+          display: block;
+          width: fit-content;
+          margin: 0 auto;
+        }
+      }
+      .logo {
+        scale: 0.65;
+      }
+    }
+  }
+  &__btn {
+    display: none;
+
+    @include for-phone {
+      display: block;
+      width: 228px;
+      height: 40px;
+      margin: 24px auto 0;
+      background: #ffffff;
+      border-radius: 50px;
+      border: 1px solid transparent;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 146%;
+      color: #000000;
+      font-family: inherit;
+      transition: 0.2s;
+      cursor: pointer;
+      &:hover {
+        border: 1px solid #00000033;
+      }
+      &:active {
+        translate: 0 2px;
+      }
+    }
+  }
+  &__car {
+    width: 780px;
+    max-width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    translate: -50% 0;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}

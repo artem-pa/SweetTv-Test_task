@@ -1,0 +1,12 @@
+@import 'variables';
+
+@mixin for-tablet {
+  @media screen and (max-width: $tablet) {
+    @content;
+  }
+}
+@mixin for-phone {
+  @media screen and (max-width: $phone) {
+    @content;
+  }
+}
