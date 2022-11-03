@@ -1,0 +1,140 @@
+.gift {
+  margin-top: 145px;
+  @include for-tablet {
+    margin-top: 100px;
+  }
+  @include for-phone {
+    margin-top: 70px;
+  }
+
+  &__title {
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 120%;
+    color: $dark;
+    text-align: center;
+    margin-bottom: 88px;
+
+    @include for-tablet {
+      font-size: 30px;
+      margin-bottom: 60px;
+    }
+    @include for-phone {
+      font-size: 24px;
+      margin-bottom: 40px;
+    }
+  }
+
+  &__list {
+    padding: 0 80px 40px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+
+    @include for-laptop {
+      padding: 0 0 40px;
+      align-items: center;
+    }
+    @include for-phone {
+      padding: 0;
+    }
+  }
+
+  &__step {
+    align-items: center;
+    display: grid;
+    column-gap: 50px;
+    grid-template-columns: 320px 360px;
+    grid-template-areas: "a b";
+    &-reverse {
+      column-gap: 10px;
+      grid-template-columns: 320px 410px;
+      grid-template-areas: "b a";
+    }
+
+    @include for-tablet {
+      row-gap: 50px;
+      grid-template-columns: 1fr;
+      grid-template-areas: "a" "b";
+    }
+    @include for-phone {
+      row-gap: 30px;
+    }
+  }
+
+  &__text {
+    padding-left: 45px;
+    position: relative;
+    grid-area: a;
+    .decor {
+      font-weight: 800;
+      font-size: 129px;
+      line-height: 120%;
+      color: $light;
+      user-select: none;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      translate: 0 -50%;
+
+      @include for-tablet {
+        font-size: 100px;
+      }
+      @include for-phone {
+        padding: 0;
+      }
+    }
+    .text {
+      position: relative;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 120%;
+      color: $dark;
+      z-index: 2;
+
+      @include for-tablet {
+        font-size: 20px;
+      }
+      @include for-tablet {
+        font-size: 16px;
+      }
+      a {
+        display: block;
+        margin-top: 10px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 130.5%;
+        text-decoration-line: underline;
+        transition: 0.2s;
+        &:hover {
+          color: #3333dd;
+        }
+
+        @include for-tablet {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  &__image {
+    height: 200px;
+    grid-area: b;
+    text-align: center;
+    @include for-phone {
+      scale: 1;
+      height: fit-content;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    img {
+      height: 100%;
+    }
+
+    &-car {
+      height: 300px;
+      scale: 1.5;
+    }
+  }
+}
