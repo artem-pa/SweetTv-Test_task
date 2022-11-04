@@ -5,7 +5,7 @@
   "main": "gulpfile.js",
   "type": "module",
   "scripts": {
-    "dev": "gulp",
+    "start": "gulp",
     "build": "gulp build --build"
   },
   "author": "Artem Parashchenko",
