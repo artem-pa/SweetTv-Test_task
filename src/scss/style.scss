@@ -41,3 +41,19 @@ body {
   max-width: calc(100% - 30px);
   margin: 0 auto;
 }
+
+.scroll-animated {
+  opacity: 0;
+  translate: 0 30px;
+  transition: 1s;
+  &.left {
+    translate: 30px 0;
+  }
+  &.right {
+    translate: -30px 0;
+  }
+  &.show {
+    opacity: 1;
+    translate: 0 0;
+  }
+}

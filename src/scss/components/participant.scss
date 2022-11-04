@@ -24,6 +24,7 @@
   }
   &__image {
     width: 100%;
+    user-select: none;
 
     @include for-tablet {
       position: relative;

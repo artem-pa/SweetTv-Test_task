@@ -89,6 +89,7 @@
     position: absolute;
     top: 0;
     right: -120px;
+    user-select: none;
 
     @include for-tablet {
       height: 500px;

@@ -22,6 +22,7 @@
 
   &__image {
     width: 100%;
+    user-select: none;
 
     @include for-tablet {
       width: 85%;
