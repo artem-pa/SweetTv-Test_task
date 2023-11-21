@@ -1,4 +1,4 @@
-const END_DATE = "2022.12.31 23:59:59";
+const END_DATE = "2023.12.31 23:59:59";
 
 const timerBody = document.querySelector(".timer__body");
 const daysCell = document.querySelector(".timer .days");
